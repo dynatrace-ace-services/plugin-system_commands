@@ -9,7 +9,7 @@ This OneAgne plugin works on the linux and the windows servers with a OneAgent.
  
 ## Labs
 
- - [Env windows](/windows/Readme.md)
  - [Env linux](/linux/Readme.md)
+ - [Env windows](/windows/Readme.md)
  - [Alert](/alert/Readme.md)
  
