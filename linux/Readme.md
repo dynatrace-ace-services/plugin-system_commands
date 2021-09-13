@@ -37,13 +37,18 @@ Apply the config on the endpoint
       "command": "/opt/dynatrace/oneagent/scripts/random.ksh"
     }
     
-The json structire is this one; 
+The full json structure is this one; 
 
 	{
 	  "scripts": [
-		{
-		 Lab1
-		},
+		 {
+     		 "metricname" : "random script on linux",
+      		 "frequency" : "1m",
+      		 "timeout" : "10",
+      		 "type" : "float",
+     		  "shell": "",
+      		 "command": "/opt/dynatrace/oneagent/scripts/random.ksh"
+    		},
 		{
 		 Lab2	
 		},
