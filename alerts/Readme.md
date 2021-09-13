@@ -23,8 +23,8 @@ Each of this alert has the same type of configuration :
 
 use monaco with this configuration : (lab on monaco [here](https://github.com/dynatrace-ace-services/easy-dynatrace-with-monaco/tree/main/00-install-Monaco) )
  
- 		export NEW_CLI=1
-		cd; cd plugin-system_commands/alerts
-		./monaco deploy -e=environment.yaml alert
+     export NEW_CLI=1
+     cd; cd plugin-system_commands/alerts
+     ./monaco deploy -e=environment.yaml alert
 		
    
