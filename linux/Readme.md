@@ -55,7 +55,7 @@ Apply the config on the endpoint
 
 ## Lab 3 - status_ko_ok_on_exit_status
 
-Install appache 2 
+Install apache2 
 
     sudo apt install apache2
     sudo service apache2 start
@@ -85,11 +85,6 @@ After 5 minutes
 
 ## Lab 4 - status_ko_ok_on_message
 
-Install appache 2 
-
-    sudo apt install apache2
-    sudo service apache2 start
-
 Test the script
 
     /opt/dynatrace/oneagent/scripts/check_service_status.ksh apache2.service
@@ -97,16 +92,16 @@ Test the script
 Apply the config on the endpoint
 
     {
-     "metricname" : "httpd.service status on message",
+     "metricname" : "apache2.service status on message",
      "type" : "status_ko_ok_on_message",
      "frequency" : "1m",
      "timeout" : "30",
      "shell": "",
-     "command": "/opt/dynatrace/oneagent/scripts/check_service_status.ksh httpd.service",
+     "command": "/opt/dynatrace/oneagent/scripts/check_service_status.ksh apache2.service",
      "ok_pattern" : "Active: (.*?) \\((.*?)\\) since (.*?);",
-     "ok_message" : "Service httpd is ${word1} in status ${word2} since ${word3}",
+     "ok_message" : "Service apache2 is ${word1} in status ${word2} since ${word3}",
     "ko_pattern" : "Active: inactive \\((.*?)\\)",
-     "ko_message" : "Service httpd is down with status ${word1}"
+     "ko_message" : "Service apache2 is down with status ${word1}"
     }
 
 After 2 minutes 
