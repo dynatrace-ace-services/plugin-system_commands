@@ -9,7 +9,7 @@
 	 "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\random_number.py"
 	},
 	{
-	 "metricname" : "demo2 status on message ",
+	 "metricname" : "demo status on message ",
 	 "type" : "status_ok_warning_critical",
 	 "frequency" : "1m",
 	 "timeout" : "30",
