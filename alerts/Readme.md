@@ -15,9 +15,9 @@ Each of this alert has the same type of configuration :
 ![image](https://user-images.githubusercontent.com/40337213/133106322-0d0b4e9e-88ae-4e25-995c-b74df39f8f3f.png)
 ![image](https://user-images.githubusercontent.com/40337213/133110325-49f4f32a-679e-48f2-a2a4-b055c56d70c6.png)
 
-  host : {dims:dt.entity.host.name}
-  metric_name : {dims:metric_name}
-  message : {dims:message}
+    host : {dims:dt.entity.host.name}
+    metric_name : {dims:metric_name}
+    message : {dims:message}
 
 ## from monaco
 
