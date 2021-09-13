@@ -63,23 +63,24 @@ Here is the full json structure for the OneAgent endpoint (describe on the this 
 
 Test the script several times
 
-     C:\ProgramData\dynatrace\oneagent\scripts\scriptwindows.bat
+     python C:\ProgramData\dynatrace\oneagent\scripts\scriptwindows.py
   
 Apply the config with the appropriate configuration for "pattern" and "message": 
 
-    {
-     "metricname" : "demo status on message",
-     "type" : "status_ko_ok_on_message",
-     "frequency" : "1m",
-     "timeout" : "30",
-     "shell": "",
-     "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\scriptwindows.bat",
-     "ok_pattern" : "...",
-     "ok_message" : "...",
-     "ko_pattern" : "...",
-     "ko_message" : "..."
-    }
-
+	{
+	"metricname" : "demo2 status on message ",
+	"type" : "status_ok_warning_critical",
+	"frequency" : "1m",
+	"timeout" : "30",
+	"shell": "python",
+	"command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\scriptwindows.py",
+	"ok_pattern" : "OK;value=([0-9]+)",
+	"ok_message" : "Status OK,demo_'${word1}'",
+	"warning_pattern" : "WARNING;value=([0-9]+)",
+	"warning_message" : "Status WARNING,demo_'${word1}'",
+	"critical_pattern" : "CRITICAL;value=([0-9]+)",
+	"critical_message" : "Status CRITICAL,demo_'${word1}'"
+	}
 
  
     
