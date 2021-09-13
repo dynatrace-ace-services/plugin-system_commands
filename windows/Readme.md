@@ -9,12 +9,10 @@ Git clone
 Manually unzip and copy 
    
     custom.python.system_commands.zip => C:\Program Files\dynatrace\oneagent\plugin_deployment
+    
+And destart the Dynatrace OneAgent Service
 
-Restart the service
-
-    Restart-Service -Name "Dynatrace OneAgent"
-
-Copy the script on
+Copy the scripts on
 
     mkdir C:\ProgramData\dynatrace\oneagent\scripts
     copy windows\scripts_windows C:\ProgramData\dynatrace\oneagent\scripts
