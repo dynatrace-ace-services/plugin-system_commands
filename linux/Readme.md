@@ -19,7 +19,7 @@ Copy the script on
     cd;cd plugin-system_commands
     sudo mkdir /opt/dynatrace/oneagent/scripts/
     sudo cp -rf  ./linux/scripts_linux/* /opt/dynatrace/oneagent/scripts/
-    chmod +x /opt/dynatrace/oneagent/scripts/*.ksh
+    sudo chmod +x /opt/dynatrace/oneagent/scripts/*.ksh
 
 ## Lab 1 - metric (float)
 Test the script
