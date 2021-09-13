@@ -18,14 +18,13 @@ Copy the script on
 
     cd;cd plugin-system_commands
     sudo mkdir /opt/dynatrace/oneagent/scripts/
-    sudo cp -rf  ./scripts_linux/* /opt/dynatrace/oneagent/scripts/
+    sudo cp -rf  ./linux/scripts_linux/* /opt/dynatrace/oneagent/scripts/
     chmod +x /opt/dynatrace/oneagent/scripts/*.ksh
 
 ## Lab 1 - metric (float)
 Test the script
   
-    cd;cd plugin-system_commands
-    cd /opt/dynatrace/oneagent/scripts
+    cd;cd /opt/dynatrace/oneagent/scripts
     ./CountFiles.ksh /opt/dynatrace/oneagent/scripts/random.ksh
     
 Apply the config on the endpoint
@@ -42,7 +41,7 @@ Apply the config on the endpoint
 ## Lab 2 - metric (float) - frequency every 2 minutes
 Test the script
   
-    cd /opt/dynatrace/oneagent/scripts
+    cd;cd /opt/dynatrace/oneagent/scripts
     /opt/dynatrace/oneagent/scripts/TestSchedule.ksh
 
 Apply the config on the endpoint
@@ -65,7 +64,7 @@ Install appache 2
 
 Test the script
 
-    cd /opt/dynatrace/oneagent/scripts
+    cd;cd /opt/dynatrace/oneagent/scripts
     /opt/dynatrace/oneagent/scripts/SystemctlServiceStatus.ksh apache2.service
   
 Apply the config on the endpoint
@@ -96,7 +95,7 @@ Install appache 2
 
 Test the script
 
-    cd /opt/dynatrace/oneagent/scripts
+    cd;cd /opt/dynatrace/oneagent/scripts
     /opt/dynatrace/oneagent/scripts/check_service_status.ksh apache2.service
   
 Apply the config on the endpoint
@@ -122,7 +121,7 @@ After 2 minutes
 
 Test the script
 
-    cd /opt/dynatrace/oneagent/scripts
+    cd;cd /opt/dynatrace/oneagent/scripts
     /opt/dynatrace/oneagent/scripts/demo_metric.ksh
     
 Apply the config on the endpoint
