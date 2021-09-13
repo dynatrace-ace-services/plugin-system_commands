@@ -4,7 +4,7 @@ This plugin collects any metric and any status that are the result of the local 
 This OneAgne plugin works on the linux and the windows servers with a OneAgent.  
 
 ## Prerequisite : 
-  - Upload the **Plugin system_commands** on dynatrace UI  
+  - Upload the **Plugin system_commands** on dynatrace UI - more detail [here](./Dynatrace - Plugin system_commands.pdf)
  <img src="https://user-images.githubusercontent.com/40337213/133091166-466c3e10-bc97-4a9d-839a-d53ca92843d9.png" width="500" height="300"> 
  
 ## Labs
