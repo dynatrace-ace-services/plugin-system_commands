@@ -1,28 +1,21 @@
-# Plugin system_commands - on host linux
+# Plugin system_commands - on host windows
 
 Git clone
 
-    git clone https://github.com/JLLormeau/plugin_generic/
-    cd plugin_generic
+    cd /D %HOMEDRIVE%%HOMEPATH%
+    git clone https://github.com/dynatrace-ace-services/plugin-system_commands/
+    cd plugin-system_commands
    
  
-Install the plugin on linux host
-   
-    sudo apt install unzip
-    sudo unzip custom.python.system_commands.zip -d /opt/dynatrace/oneagent/plugin_deployment/
-    sudo service oneagent restart
-
 Copy the script on
 
-    sudo mkdir /opt/dynatrace/oneagent/scripts/
-    sudo cp -rf  ./scripts_linux/* /opt/dynatrace/oneagent/scripts/
-    chmod +x /opt/dynatrace/oneagent/scripts/*.ksh
+    mkdir C:\ProgramData\dynatrace\oneagent\scripts
+    copy windows\scripts_windows C:\ProgramData\dynatrace\oneagent\scripts
 
 ## Lab 1 - metric (float)
 Test the script
   
-    cd /opt/dynatrace/oneagent/scripts
-    ./CountFiles.ksh /opt/dynatrace/oneagent/scripts/random.ksh
+   C:\ProgramData\dynatrace\oneagent\scripts\random.bat
     
 Apply the config
   
@@ -32,63 +25,11 @@ Apply the config
       "timeout" : "10",
       "type" : "float",
       "shell": "",
-      "command": "/opt/dynatrace/oneagent/scripts/random.ksh"
+      "command": "C:\ProgramData\dynatrace\oneagent\scripts\random.bat"
     }
     
-## Lab 2 - metric (float) - frequency every 2 minutes
-Test the script
-  
-    cd /opt/dynatrace/oneagent/scripts
-    /opt/dynatrace/oneagent/scripts/TestSchedule.ksh
 
-Apply the config
-
-    {
-      "metricname" : "Test every 2 minutes",
-      "frequency" : "2m",
-      "timeout" : "10",
-      "type" : "float",
-      "shell": "",
-      "command": "/opt/dynatrace/oneagent/scripts/TestSchedule.ksh"
-    }
-
-## Lab 3 - status_ko_ok_on_exit_status
-
-Install appache 2 
-
-    sudo apt install apache2
-    sudo service apache2 start
-
-Test the script
-
-    cd /opt/dynatrace/oneagent/scripts
-    /opt/dynatrace/oneagent/scripts/SystemctlServiceStatus.ksh apache2.service
-  
-Apply the config
-
-    {
-      "metricname" : "apache2.service status on exit status",
-      "type" : "status_ko_ok_on_exit_status",
-      "frequency" : "1m",
-      "timeout" : "10",
-      "shell": "",
-      "command": "/opt/dynatrace/oneagent/scripts/SystemctlServiceStatus.ksh apache2.service"
-    }
-
-After 2 minutes 
-
-    sudo service apache2 stop
-    
-After 5 minutes 
-
-    sudo service apache2 start
-
-## Lab 4 - status_ko_ok_on_message
-
-Install appache 2 
-
-    sudo apt install apache2
-    sudo service apache2 start
+## Lab 2 - status_ko_ok_on_message
 
 Test the script
 
