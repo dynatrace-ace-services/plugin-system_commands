@@ -25,7 +25,7 @@ Copy the script on
 Test the script
   
     cd;cd /opt/dynatrace/oneagent/scripts
-    ./CountFiles.ksh /opt/dynatrace/oneagent/scripts/random.ksh
+    /opt/dynatrace/oneagent/scripts/random.ksh
     
 Apply the config on the endpoint
   
