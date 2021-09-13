@@ -1,4 +1,4 @@
-# Plugin system_commands - on host linux
+# Plugin system_commands - on linux
 
 Git clone
 
