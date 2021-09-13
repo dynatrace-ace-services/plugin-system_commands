@@ -1,14 +1,13 @@
-# Generic Exteions - plugin system_commands
+# Generic Extensions - plugin system_commands
 
-## Perimeter
-  Host linux and Hos windows with OneAgent
+This plugin collects any metric and any status that are the result of the local scripts.
+This OneAgne plugin works on the linux and the windows servers with a OneAgent.
 
 ## Prerequisite : 
-  Updload * Plugin system_commands * on dynatrace UI
+  Updload the * Plugin system_commands * on dynatrace UI (![image](https://user-images.githubusercontent.com/40337213/133091166-466c3e10-bc97-4a9d-839a-d53ca92843d9.png)
 
 ## Labs
 
  - [On host windows](/windows/Readme.md)
  - [On host linux](/linux/Readme.md)
  
- - 
