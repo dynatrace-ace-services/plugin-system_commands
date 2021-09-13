@@ -57,7 +57,9 @@ Here is the full json structure for the OneAgent endpoint (describe on the this 
 		 }
 	  ]
 	}
-    
+![image](https://user-images.githubusercontent.com/40337213/133114810-ef310230-ac30-496c-b79e-8cbca7697dd2.png)
+
+
 ## Lab 2 - metric (float) - frequency every 2 minutes
 Test the script
   
