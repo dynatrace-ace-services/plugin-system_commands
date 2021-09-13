@@ -1,0 +1,32 @@
+{
+  "scripts": [
+   {
+	 "metricname" : "random script on windows",
+	 "frequency" : "1m",
+	 "timeout" : "10",
+	 "type" : "float",
+	 "shell": "",
+	 "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\random.bat"
+	},
+	{
+	 "metricname" : "Test every 2 minutes",
+  	 "frequency" : "2m",
+ 	 "timeout" : "10",
+	 "type" : "float",
+	 "shell": "",
+	 "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\test.bat"
+	},
+	{
+	 "metricname" : "demo status on message",
+	 "type" : "status_ko_ok_on_message",
+	 "frequency" : "1m",
+	 "timeout" : "30",
+	 "shell": "",
+	 "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\scriptwindows.bat",
+	 "ok_pattern" : "demo_Status;value=(.*?);OK",
+	 "ok_message" : "Status CRITICAL, demo = {word1}",
+	 "ko_pattern" : "demo_Status;value=(.*?);CRITICAL",
+	 "ko_message" : "Status CRITICAL, demo = {word1}"
+	}
+  ]
+}
