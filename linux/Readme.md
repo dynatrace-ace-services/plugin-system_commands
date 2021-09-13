@@ -87,6 +87,8 @@ Test the script
 
     /opt/dynatrace/oneagent/scripts/SystemctlServiceStatus.ksh apache2.service
   
+Troubleshoot: if apache2 doesn't start, stop your loacal service on tcp port 80.
+
 Apply the config on the endpoint
 
     {
