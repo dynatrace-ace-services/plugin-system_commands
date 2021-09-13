@@ -59,7 +59,7 @@ Here is the full json structure for the OneAgent endpoint (describe on the this 
 ## Lab 2 - metric (float) - frequency every 2 minutes
 Test the script
   
-   C:\ProgramData\dynatrace\oneagent\scripts\test.bat
+    C:\ProgramData\dynatrace\oneagent\scripts\test.bat
 
 Apply the config on the endpoint
 
