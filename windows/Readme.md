@@ -59,17 +59,17 @@ Here is the full json structure for the OneAgent endpoint (describe on the this 
 ## Lab 2 - metric (float) - frequency every 2 minutes
 Test the script
   
-    C:\ProgramData\dynatrace\oneagent\scripts\test.bat
+    C:\ProgramData\dynatrace\oneagent\scripts\test.bat 30
 
 Apply the config on the endpoint
 
     {
       "metricname" : "Test every 2 minutes",
       "frequency" : "2m",
-      "timeout" : "10",
+      "timeout" : "60",
       "type" : "float",
       "shell": "",
-      "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\test.bat"
+      "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\test.bat 30"
     }
 
 
