@@ -47,11 +47,11 @@ Apply the config on the endpoint
 
 ## Lab 3 - status_ko_ok_on_message
 
-Test the script
+Test the script several times
 
      C:\ProgramData\dynatrace\oneagent\scripts\scriptwindows.bat
   
-Apply the config with the appropriate configuration on pattern and message: 
+Apply the config with the appropriate configuration for "pattern" and "message": 
 
     {
      "metricname" : "demo status on message",
