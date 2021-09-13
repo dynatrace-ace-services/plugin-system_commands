@@ -37,6 +37,22 @@ Apply the config on the endpoint
       "command": "/opt/dynatrace/oneagent/scripts/random.ksh"
     }
     
+The json structire is this one; 
+
+	{
+	  "scripts": [
+		{
+		 Lab1
+		},
+		{
+		 Lab2	
+		},
+		{
+		 ...
+		 }
+	  ]
+	}
+    
 ## Lab 2 - metric (float) - frequency every 2 minutes
 Test the script
   
