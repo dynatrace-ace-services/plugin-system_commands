@@ -25,7 +25,7 @@ Apply the config
       "timeout" : "10",
       "type" : "float",
       "shell": "",
-      "command": "C:\ProgramData\dynatrace\oneagent\scripts\random.bat"
+      "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\random.bat"
     }
     
 ## Lab 2 - metric (float) - frequency every 2 minutes
@@ -41,7 +41,7 @@ Apply the config on the endpoint
       "timeout" : "10",
       "type" : "float",
       "shell": "",
-      "command": "C:\ProgramData\dynatrace\oneagent\scripts\test.bat"
+      "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\test.bat"
     }
 
 
@@ -59,7 +59,7 @@ Apply the config with the appropriate configuration for "pattern" and "message":
      "frequency" : "1m",
      "timeout" : "30",
      "shell": "",
-     "command": "C:\ProgramData\dynatrace\oneagent\scripts\scriptwindows.bat",
+     "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\scriptwindows.bat",
      "ok_pattern" : "...",
      "ok_message" : "...",
      "ko_pattern" : "...",
