@@ -6,7 +6,7 @@
 	  "timeout" : "10",
 	  "type" : "float",
 	  "shell": "",
-	  "command": "/opt/dynatrace/oneagent/scripts/random.sh"
+	  "command": "/opt/dynatrace/oneagent/scripts/random.ksh"
 	},
 	{
 	  "metricname" : "Test every 2 minutes",
@@ -46,7 +46,7 @@
 	"ok_pattern" : "Application: (.*?), Server: (.*?), Status: Ok",
 	"ok_message" : "${word1} ${word2} server is OK",
 	"warning_pattern" : "Application: (.*?), Server: (.*?), Status: Warning, ErrorCode: (.+)",
-	"warning_message" : "Nouveau warning message ${word1} ${word2} server is in Waarning status. Error code is : ${word3}",
+	"warning_message" : "Nouveau warning message ${word1} ${word2} server is in Warning status. Error code is : ${word3}",
 	"critical_pattern" : "Application: (.*?), Server: (.*?), Status: Critical, ErrorCode: (.+)",
 	"critical_message" : "${word1} ${word2} server is in Critial status. Error code is : ${word3}"
 	}
