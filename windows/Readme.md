@@ -28,8 +28,24 @@ Apply the config
       "command": "C:\ProgramData\dynatrace\oneagent\scripts\random.bat"
     }
     
+## Lab 2 - metric (float) - frequency every 2 minutes
+Test the script
+  
+   C:\ProgramData\dynatrace\oneagent\scripts\test.bat
 
-## Lab 2 - status_ko_ok_on_message
+Apply the config on the endpoint
+
+    {
+      "metricname" : "Test every 2 minutes",
+      "frequency" : "2m",
+      "timeout" : "10",
+      "type" : "float",
+      "shell": "",
+      "command": "C:\ProgramData\dynatrace\oneagent\scripts\test.bat"
+    }
+
+
+## Lab 3 - status_ko_ok_on_message
 
 Test the script
 
@@ -51,45 +67,6 @@ Apply the config
      "ko_message" : "Service httpd is down with status ${word1}"
     }
 
-After 2 minutes 
 
-    sudo service apache2 stop
-
-## Lab 5 - status_ok_warning_critical
-
-Test the script
-
-    cd /opt/dynatrace/oneagent/scripts
-    /opt/dynatrace/oneagent/scripts/demo_metric.ksh
-    
- Apply the config
-
-    {
-	"metricname" : "cft_status",
-	"type" : "status_ok_warning_critical",
-	"frequency" : "1m",
-	"timeout" : "10",
-	"shell": "",
-	"command": "/opt/dynatrace/oneagent/scripts/demo_metric.ksh",
-	"ok_pattern" : "Application: (.*?), Server: (.*?), Status: Ok",
-	"ok_message" : "${word1} ${word2} server is OK",
-	"warning_pattern" : "Application: (.*?), Server: (.*?), Status: Warning, ErrorCode: (.+)",
-	"warning_message" : "Nouveau warning message ${word1} ${word2} server is in Warning status. Error code is : ${word3}",
-	"critical_pattern" : "Application: (.*?), Server: (.*?), Status: Critical, ErrorCode: (.+)",
-	"critical_message" : "${word1} ${word2} server is in Critial status. Error code is : ${word3}"
-    }
-    
-After 2 minutes : 
-
-     sudo cp demo_metric_warning.txt demo_metric.txt
-     
-     
-5 minutes later :
-
-     sudo cp demo_metric_critical.txt demo_metric.txt
-     
- back to nomal status
- 
-     sudo cp demo_metric_ok.txt demo_metric.txt
  
     
