@@ -69,7 +69,7 @@ Apply the config with the appropriate configuration for "pattern" and "message":
 In this example, the result is splited by *demo_value*.
 
 	{
-	"metricname" : "demo2 status on message ",
+	"metricname" : "demo status on message ",
 	"type" : "status_ok_warning_critical",
 	"frequency" : "1m",
 	"timeout" : "30",
