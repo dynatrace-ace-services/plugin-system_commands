@@ -76,7 +76,7 @@ Apply the config on the endpoint
 
 ## Lab 3 - status_ko_ok_on_exit_status
 
-Install apache2 
+Install apache2 (lab for Ubuntu)
 
     sudo apt install apache2
     sudo service apache2 start
