@@ -13,10 +13,11 @@ Manually unzip and copy
 
     And destart the Dynatrace OneAgent Service
 
-Copy the scripts on
+Copy the scripts on C:\ProgramData\dynatrace\oneagent\scripts
 
+    cd /D %HOMEDRIVE%%HOMEPATH%
     mkdir C:\ProgramData\dynatrace\oneagent\scripts
-    copy windows\scripts_windows C:\ProgramData\dynatrace\oneagent\scripts
+    copy plugin-system_commands\windows\scripts_windows C:\ProgramData\dynatrace\oneagent\scripts
 
 ## Lab 1 - metric (float)
 Test the script
