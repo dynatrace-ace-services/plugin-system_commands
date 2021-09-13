@@ -15,7 +15,7 @@ Copy the script on
 ## Lab 1 - metric (float)
 Test the script
   
-   C:\ProgramData\dynatrace\oneagent\scripts\random.bat
+    C:\ProgramData\dynatrace\oneagent\scripts\random.bat
     
 Apply the config
   
