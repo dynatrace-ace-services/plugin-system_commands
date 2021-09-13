@@ -37,7 +37,7 @@ Apply the config on the endpoint
       "command": "/opt/dynatrace/oneagent/scripts/random.ksh"
     }
     
-The full json structure is this one (describe on the this [documentation](../Dynatrace-Plugin-system_commands.pdf)) 
+The full json structure to apply to th OneAgent endpoint for this plugin is this one (describe on the this [documentation](../Dynatrace-Plugin-system_commands.pdf)) 
 
 	{
 	  "scripts": [
