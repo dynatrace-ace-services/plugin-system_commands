@@ -24,8 +24,8 @@ Test the script
   
     python C:\ProgramData\dynatrace\oneagent\scripts\random_number.py
     
-Apply the config
-  
+Apply the config 
+
     {
       "metricname" : "random script on windows with python",
       "frequency" : "1m",
@@ -65,7 +65,8 @@ Test the script several times
 
      python C:\ProgramData\dynatrace\oneagent\scripts\scriptwindows.py
   
-Apply the config with the appropriate configuration for "pattern" and "message": 
+Apply the config with the appropriate configuration for "pattern" and "message":
+In this example, the result is splited by *demo_value*.
 
 	{
 	"metricname" : "demo2 status on message ",
