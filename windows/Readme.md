@@ -27,12 +27,12 @@ Test the script
 Apply the config
   
     {
-      "metricname" : "random script on windows",
+      "metricname" : "random script on windows with python",
       "frequency" : "1m",
       "timeout" : "10",
       "type" : "float",
-      "shell": "",
-      "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\random.bat"
+      "shell": "python",
+      "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\scriptpython.py"
     }
     
 Here is the full json structure for the OneAgent endpoint (describe on the this [documentation](../Dynatrace-Plugin-system_commands.pdf)) 
@@ -40,12 +40,12 @@ Here is the full json structure for the OneAgent endpoint (describe on the this 
 	{
 	  "scripts": [
 		 {
-     		 "metricname" : "random script on windows",
+     		 "metricname" : "random script on windows with python",
       		 "frequency" : "1m",
       		 "timeout" : "10",
       		 "type" : "float",
      		  "shell": "",
-      		 "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\random.bat"
+      		 "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\scriptpython.py"
     		},
 		{
 		 Lab2	
@@ -58,24 +58,8 @@ Here is the full json structure for the OneAgent endpoint (describe on the this 
 
 ![image](https://user-images.githubusercontent.com/40337213/133119969-9f27afa9-afd7-47be-8179-34c4356346cf.png) 
 
-## Lab 2 - metric (float) - frequency every 2 minutes
-Test the script
-  
-    C:\ProgramData\dynatrace\oneagent\scripts\test.bat 30
 
-Apply the config on the endpoint
-
-    {
-      "metricname" : "Test every 2 minutes",
-      "frequency" : "2m",
-      "timeout" : "60",
-      "type" : "float",
-      "shell": "",
-      "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\test.bat 30"
-    }
-
-
-## Lab 3 - status_ko_ok_on_message
+## Lab 2 - status_ko_ok_on_message
 
 Test the script several times
 
