@@ -22,7 +22,7 @@ Copy the scripts on C:\ProgramData\dynatrace\oneagent\scripts
 ## Lab 1 - metric (float)
 Test the script
   
-    C:\ProgramData\dynatrace\oneagent\scripts\random.bat
+    python C:\ProgramData\dynatrace\oneagent\scripts\random_number.py
     
 Apply the config
   
@@ -32,7 +32,7 @@ Apply the config
       "timeout" : "10",
       "type" : "float",
       "shell": "python",
-      "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\scriptpython.py"
+      "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\random_number.py"
     }
     
 Here is the full json structure for the OneAgent endpoint (describe on the this [documentation](../Dynatrace-Plugin-system_commands.pdf)) 
@@ -45,7 +45,7 @@ Here is the full json structure for the OneAgent endpoint (describe on the this 
       		 "timeout" : "10",
       		 "type" : "float",
      		  "shell": "",
-      		 "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\scriptpython.py"
+      		 "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\random_number.py"
     		},
 		{
 		 Lab2	
