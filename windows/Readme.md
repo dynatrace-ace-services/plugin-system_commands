@@ -10,7 +10,7 @@ Manually unzip and copy
    
     custom.python.system_commands.zip => C:\Program Files\dynatrace\oneagent\plugin_deployment
     
-And destart the Dynatrace OneAgent Service
+    And destart the Dynatrace OneAgent Service
 
 Copy the scripts on
 
