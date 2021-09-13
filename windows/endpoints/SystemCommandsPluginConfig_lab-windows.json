@@ -11,10 +11,10 @@
 	{
 	 "metricname" : "Test every 2 minutes",
   	 "frequency" : "2m",
- 	 "timeout" : "10",
+ 	 "timeout" : "60",
 	 "type" : "float",
 	 "shell": "",
-	 "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\test.bat"
+	 "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\test.bat 30"
 	},
 	{
 	 "metricname" : "demo status on message",
