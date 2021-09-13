@@ -49,22 +49,21 @@ Apply the config on the endpoint
 
 Test the script
 
-    cd /opt/dynatrace/oneagent/scripts
-    /opt/dynatrace/oneagent/scripts/check_service_status.ksh apache2.service
+     C:\ProgramData\dynatrace\oneagent\scripts\scriptwindows.bat
   
-Apply the config
+Apply the config with the appropriate configuration on pattern and message: 
 
     {
-     "metricname" : "httpd.service status on message",
+     "metricname" : "demo status on message",
      "type" : "status_ko_ok_on_message",
      "frequency" : "1m",
      "timeout" : "30",
      "shell": "",
-     "command": "/opt/dynatrace/oneagent/scripts/check_service_status.ksh httpd.service",
-     "ok_pattern" : "Active: (.*?) \\((.*?)\\) since (.*?);",
-     "ok_message" : "Service httpd is ${word1} in status ${word2} since ${word3}",
-    "ko_pattern" : "Active: inactive \\((.*?)\\)",
-     "ko_message" : "Service httpd is down with status ${word1}"
+     "command": "C:\ProgramData\dynatrace\oneagent\scripts\scriptwindows.bat",
+     "ok_pattern" : "...",
+     "ok_message" : "...",
+     "ko_pattern" : "...",
+     "ko_message" : "..."
     }
 
 
