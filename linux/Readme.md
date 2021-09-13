@@ -2,18 +2,21 @@
 
 Git clone
 
-    git clone https://github.com/JLLormeau/plugin_generic/
-    cd plugin_generic
+    cd ~
+    git clone https://github.com/dynatrace-ace-services/plugin-system_commands/
+    cd plugin-system_commands
    
  
 Install the plugin on linux host
    
+    cd;cd plugin-system_commands
     sudo apt install unzip
     sudo unzip custom.python.system_commands.zip -d /opt/dynatrace/oneagent/plugin_deployment/
     sudo service oneagent restart
 
 Copy the script on
 
+    cd;cd plugin-system_commands
     sudo mkdir /opt/dynatrace/oneagent/scripts/
     sudo cp -rf  ./scripts_linux/* /opt/dynatrace/oneagent/scripts/
     chmod +x /opt/dynatrace/oneagent/scripts/*.ksh
@@ -21,10 +24,11 @@ Copy the script on
 ## Lab 1 - metric (float)
 Test the script
   
+    cd;cd plugin-system_commands
     cd /opt/dynatrace/oneagent/scripts
     ./CountFiles.ksh /opt/dynatrace/oneagent/scripts/random.ksh
     
-Apply the config
+Apply the config on the endpoint
   
     {
       "metricname" : "random script on linux",
@@ -41,7 +45,7 @@ Test the script
     cd /opt/dynatrace/oneagent/scripts
     /opt/dynatrace/oneagent/scripts/TestSchedule.ksh
 
-Apply the config
+Apply the config on the endpoint
 
     {
       "metricname" : "Test every 2 minutes",
@@ -64,7 +68,7 @@ Test the script
     cd /opt/dynatrace/oneagent/scripts
     /opt/dynatrace/oneagent/scripts/SystemctlServiceStatus.ksh apache2.service
   
-Apply the config
+Apply the config on the endpoint
 
     {
       "metricname" : "apache2.service status on exit status",
@@ -95,7 +99,7 @@ Test the script
     cd /opt/dynatrace/oneagent/scripts
     /opt/dynatrace/oneagent/scripts/check_service_status.ksh apache2.service
   
-Apply the config
+Apply the config on the endpoint
 
     {
      "metricname" : "httpd.service status on message",
@@ -121,7 +125,7 @@ Test the script
     cd /opt/dynatrace/oneagent/scripts
     /opt/dynatrace/oneagent/scripts/demo_metric.ksh
     
- Apply the config
+Apply the config on the endpoint
 
     {
 	"metricname" : "cft_status",
@@ -142,12 +146,11 @@ After 2 minutes :
 
      sudo cp demo_metric_warning.txt demo_metric.txt
      
-     
 5 minutes later :
 
      sudo cp demo_metric_critical.txt demo_metric.txt
      
- back to nomal status
+back to nomal status
  
      sudo cp demo_metric_ok.txt demo_metric.txt
  
