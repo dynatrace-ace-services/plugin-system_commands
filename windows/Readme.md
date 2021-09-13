@@ -28,6 +28,27 @@ Apply the config
       "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\random.bat"
     }
     
+The full json structure to apply to th OneAgent endpoint for this plugin is this one (describe on the this [documentation](../Dynatrace-Plugin-system_commands.pdf)) 
+
+	{
+	  "scripts": [
+		 {
+     		 "metricname" : "random script on windows",
+      		 "frequency" : "1m",
+      		 "timeout" : "10",
+      		 "type" : "float",
+     		  "shell": "",
+      		 "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\random.bat"
+    		},
+		{
+		 Lab2	
+		},
+		{
+		 ...
+		 }
+	  ]
+	}
+    
 ## Lab 2 - metric (float) - frequency every 2 minutes
 Test the script
   
