@@ -6,7 +6,10 @@ Git clone
     git clone https://github.com/dynatrace-ace-services/plugin-system_commands/
     cd plugin-system_commands
    
- 
+Manually copy and unzip 
+   
+    custom.python.system_commands.zip => C:\Program Files\dynatrace\oneagent\plugin_deployment
+   
 Copy the script on
 
     mkdir C:\ProgramData\dynatrace\oneagent\scripts
