@@ -28,7 +28,7 @@ Apply the config
       "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\random.bat"
     }
     
-The full json structure to apply to th OneAgent endpoint for this plugin is this one (describe on the this [documentation](../Dynatrace-Plugin-system_commands.pdf)) 
+Here is the full json structure for the OneAgent endpoint (describe on the this [documentation](../Dynatrace-Plugin-system_commands.pdf)) 
 
 	{
 	  "scripts": [
