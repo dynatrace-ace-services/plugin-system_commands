@@ -23,9 +23,9 @@
 	 "timeout" : "30",
 	 "shell": "",
 	 "command": "C:\\ProgramData\\dynatrace\\oneagent\\scripts\\scriptwindows.bat",
-	 "ok_pattern" : "demo_Status;value=(.*?);OK",
+	 "ok_pattern" : "demo_Status;OK;value=(.*?)",
 	 "ok_message" : "Status OK, demo = ${word1}",
-	 "ko_pattern" : "demo_Status;value=(.*?);CRITICAL",
+	 "ko_pattern" : "demo_Status;CRITICAL;value=(.*?)",
 	 "ko_message" : "Status CRITICAL, demo = ${word1}"
 	}
   ]
