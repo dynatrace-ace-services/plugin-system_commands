@@ -1,0 +1,10 @@
+config:
+- CriticalAlertingonOkKoonmessageMetrics: CriticalAlertingonOkKoonmessageMetrics.json
+- CriticalAlertingonOkKoonexitstatusMetrics: CriticalAlertingonOkKoonexitstatusMetrics.json
+- CriticalAlertingonOkWarningCriticalMetrics: CriticalAlertingonOkWarningCriticalMetrics.json
+CriticalAlertingonOkKoonexitstatusMetrics:
+- name: Critical Alerting on Ok/Ko on exit status Metrics
+CriticalAlertingonOkKoonmessageMetrics:
+- name: Critical Alerting on Ok/Ko on message Metrics
+CriticalAlertingonOkWarningCriticalMetrics:
+- name: Critical Alerting on Ok/Warning/Critical Metrics

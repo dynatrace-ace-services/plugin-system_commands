@@ -1,0 +1,33 @@
+{
+ "aggregationType": "AVG",
+ "alertCondition": "ABOVE",
+ "dealertingSamples": 5,
+ "description": "host : {dims:dt.entity.host.name}\nmetric_name : {dims:metric_name}",
+ "disabledReason": "NONE",
+ "enabled": true,
+ "eventType": "AVAILABILITY",
+ "metadata": {
+  "clusterVersion": "1.225.109.20210907-135400",
+  "configurationVersions": [
+   6
+  ]
+ },
+ "metricId": "ext:tech.SystemCommands.oneagent_system_commands_ok_ko_metrics_on_exit_status_alerting",
+ "monitoringStrategy": {
+  "alertCondition": "ABOVE",
+  "alertingOnMissingData": false,
+  "dealertingSamples": 5,
+  "samples": 5,
+  "threshold": 0,
+  "type": "STATIC_THRESHOLD",
+  "unit": "COUNT",
+  "violatingSamples": 3
+ },
+ "name": "{{.name}}",
+ "samples": 5,
+ "severity": "AVAILABILITY",
+ "threshold": 0,
+ "unit": "COUNT",
+ "violatingSamples": 3,
+ "warningReason": "NONE"
+}
