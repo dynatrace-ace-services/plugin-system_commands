@@ -25,6 +25,6 @@ use monaco with this configuration : (lab on monaco [here](https://github.com/dy
  
      export NEW_CLI=1
      cd; cd plugin-system_commands/alerts
-     ./monaco deploy -e=environment.yaml alert
+     ./monaco deploy -e=environment.yaml alert_monaco
 		
    
