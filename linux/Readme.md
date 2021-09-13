@@ -158,14 +158,14 @@ Apply the config on the endpoint
     
 After 2 minutes : 
 
-     sudo cp demo_metric_warning.txt demo_metric.txt
+     sudo cp /opt/dynatrace/oneagent/scripts/demo_metric_warning.txt /opt/dynatrace/oneagent/scripts/demo_metric.txt
      
 5 minutes later :
 
-     sudo cp demo_metric_critical.txt demo_metric.txt
+     sudo cp /opt/dynatrace/oneagent/scripts/demo_metric_critical.txt /opt/dynatrace/oneagent/scripts/demo_metric.txt
      
 back to nomal status
  
-     sudo cp demo_metric_ok.txt demo_metric.txt
+     sudo cp /opt/dynatrace/oneagent/scripts/demo_metric_ok.txt /opt/dynatrace/oneagent/scripts/demo_metric.txt
  
     
