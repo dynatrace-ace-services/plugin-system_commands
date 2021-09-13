@@ -24,7 +24,7 @@ Copy the script on
 ## Lab 1 - metric (float)
 Test the script
   
-   /opt/dynatrace/oneagent/scripts/random.ksh
+    /opt/dynatrace/oneagent/scripts/random.ksh
     
 Apply the config on the endpoint
   
