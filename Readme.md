@@ -1,4 +1,4 @@
-# Generic Extensions - plugin system_commands
+# Generic Extension - plugin system_commands
 
 This plugin collects any metric and any status that are the result of the local scripts.  
 This OneAgne plugin works on the linux and the windows servers with a OneAgent.  
