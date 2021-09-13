@@ -20,7 +20,7 @@ Test the script
 Apply the config
   
     {
-      "metricname" : "random script on linux",
+      "metricname" : "random script on windows",
       "frequency" : "1m",
       "timeout" : "10",
       "type" : "float",
