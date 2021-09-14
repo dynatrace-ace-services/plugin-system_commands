@@ -1,7 +1,7 @@
 # Generic Extension - plugin system_commands
 
 This plugin collects any metric and any status that are the result of the local scripts.  
-This OneAgne plugin works on the linux and the windows servers with a OneAgent.  
+This OneAgent plugin works on the linux and the windows servers with a OneAgent.  
 
 ## Prerequisite : 
   - Upload the **Plugin system_commands** on dynatrace UI - more detail [here](/Dynatrace-Plugin-system_commands.pdf)
