@@ -28,14 +28,16 @@ Test the script
     
 Apply the config on the endpoint
   
-    {
-      "metricname" : "random script on linux",
-      "frequency" : "1m",
-      "timeout" : "10",
-      "type" : "float",
-      "shell": "",
-      "command": "/opt/dynatrace/oneagent/scripts/random.ksh"
-    }
+    	{
+	  "scripts": [{
+	      "metricname" : "random script on linux",
+	      "frequency" : "1m",
+	      "timeout" : "10",
+	      "type" : "float",
+	      "shell": "",
+	      "command": "/opt/dynatrace/oneagent/scripts/random.ksh"
+	    }]
+	 }
     
 Here is the full json structure for the OneAgent endpoint (describe on the this [documentation](../Dynatrace-Plugin-system_commands.pdf))
 
