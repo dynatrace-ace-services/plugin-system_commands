@@ -28,7 +28,7 @@ Test the script
     
 Apply the config on the endpoint
   
-    	{
+    {
 	  "scripts": [{
 	      "metricname" : "random script on linux",
 	      "frequency" : "1m",
